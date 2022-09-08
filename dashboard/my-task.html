@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Dashborad </title>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  <header class="green-header pt-2 pb-2">
+      <div class="container-fluid">
+        <div class="header_boxxx d-flex align-items-center justify-content-between">
+          <div class="logo">
+            <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+          </div>
+          <div class="sreach_boxx w-50">
+            <form class="Sreach_form_box">
+              <div class="Sreach_form relative">
+                <button class="btn" type="button" id="button-addon1"><img src="images/Sreach.png"></button>
+                <input type="text" class="form-control" placeholder="Sreach" aria-label="Example text with button addon" aria-describedby="button-addon1">
+              </div>
+            </form>
+          </div>
+          <div class="menuu">
+            <ul>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle px-3 text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    English
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light px-3" href="#"><img src="images/mail.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light px-3" href="#"><img src="images/setting.png"></a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link text-light px-3" href="#"><img src="images/bell.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light px-3 profile_name" href="#"><img src="images/noor.png" class="profile"> Noor</a>
+                </li>
+                <li class="nav-item hamburger">
+                  <a class="nav-link text-light px-3 profile_name" href="#"><i class="fas fa-bars text-light"></i></a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="side_menuu  p-4">
+      <a href="index.html" ><img src="images/green_dashboard.png"> Dashborad</a>
+      <a href="payment.html" ><img src="images/pay.png"> payment methods</a>
+      <a href="cash.html" ><img src="images/cash.png"> cash withdrawal</a>
+      <a href="deposit.html"><img src="images/box.png"> deposit boxes</a>
+      <a href="profile.html"><img src="images/profile.png"> Edit Profile</a>
+      <a href="submit-task.html"><img src="images/add.png"> Submit a Task</a>
+      <a href="my-task.html" class="active_menu"><img src="images/task-w.png"> My Tasks</a>
+      <a href="create.html"><img src="images/add.png"> Create a service</a>
+      <a href="services.html"><img src="images/task.png"> My services</a>
+      <a href="worker.html" ><img src="images/worker.png"> favorite workers</a>
+      <a href="#" class="logout mt-5"><img src="images/logout.png"> Log out</a>
+    </div>
+    <div class="page_continer p-4">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="heading mb-4 d-flex justify-content-between align-items-center">
+              <h3 class="font-family-tow"><strong>My Tasks</strong></h3>
+              <div class="task_sreach">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="JOB ID" aria-describedby="button-addon2">
+                  <button class="btn btn-outline-secondary" type="button" id="button-edit">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+          <div class="col-md-12">
+            <div class="table_themee">
+              <div class="table-responsive">
+                <table class="table table-borderless text-center">
+                  <thead>
+                     <tr>
+                      <th scope="col" class="red">ID</th>
+                      <th scope="col" class="red">Job title</th>
+                      <th scope="col" class="red">Done</th>
+                      <th scope="col" class="red">Cost</th>
+                      <th scope="col" class="red">Status </th>
+                      <th scope="col" class="red">Member Status </th>
+                      <th scope="col" class="red">Feature Job </th>
+                      <th scope="col" class="red">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="table-active">
+                      <th >716</th>
+                      <th >Paid to Click (PTC): Cek website s</th>
+                      <th >2/30</th>
+                      <th >$ 0.25</th>
+                      <th ><h6><img src="images/ac.png"> Active</h6></th>
+                      <th ><img src="images/active-status.png"></th>
+                      <th ><img src="images/active-status.png"></th>
+                      <th ><a href="#" class="edit">Edit</a> <a href="#" class="delete">Delete</a></th>
+                    </tr>
+                   <tr>
+                      <th >715</th>
+                      <th >Paid to Click (PTC): Cek website s</th>
+                      <th >2/30</th>
+                      <th >$ 0.25</th>
+                      <th ><h6><img src="images/com.png"> Finised</h6></th>
+                      <th ><img src="images/active-status.png"></th>
+                      <th ><img src="images/active-status.png"></th>
+                      <th ><a href="#" class="edit">Edit</a> <a href="#" class="delete">Delete</a></th>
+                    </tr>
+                   <tr>
+                      <th >714</th>
+                      <th >Paid to Click (PTC): Cek website s</th>
+                      <th >2/30</th>
+                      <th >$ 0.25</th>
+                      <th ><h6><img src="images/com.png"> Finised</h6></th>
+                      <th ><img src="images/active-status.png"></th>
+                      <th ><img src="images/active-status.png"></th>
+                      <th ><a href="#" class="edit">Edit</a> <a href="#" class="delete">Delete</a></th>
+                    </tr>
+                    <tr>
+                      <th >713</th>
+                      <th >Paid to Click (PTC): Cek website s</th>
+                      <th >2/30</th>
+                      <th >$ 0.25</th>
+                      <th ><h6><img src="images/com.png"> Finised</h6></th>
+                      <th ><img src="images/active-status.png"></th>
+                      <th ><img src="images/active-status.png"></th>
+                      <th ><a href="#" class="edit">Edit</a> <a href="#" class="delete">Delete</a></th>
+                    </tr>
+                    <tr>
+                      <th >712</th>
+                      <th >Paid to Click (PTC): Cek website s</th>
+                      <th >2/30</th>
+                      <th >$ 0.25</th>
+                      <th ><h6><img src="images/com.png"> Finised</h6></th>
+                      <th ><img src="images/active-status.png"></th>
+                      <th ><img src="images/active-status.png"></th>
+                      <th ><a href="#" class="edit">Edit</a> <a href="#" class="delete">Delete</a></th>
+                    </tr>
+                    <tr>
+                      <th >711</th>
+                      <th >Paid to Click (PTC): Cek website s</th>
+                      <th >2/30</th>
+                      <th >$ 0.25</th>
+                      <th ><h6><img src="images/com.png"> Finised</h6></th>
+                      <th ><img src="images/active-status.png"></th>
+                      <th ><img src="images/active-status.png"></th>
+                      <th ><a href="#" class="edit">Edit</a> <a href="#" class="delete">Delete</a></th>
+                    </tr>
+                    <tr>
+                      <th >710</th>
+                      <th >Paid to Click (PTC): Cek website s</th>
+                      <th >2/30</th>
+                      <th >$ 0.25</th>
+                      <th ><h6><img src="images/com.png"> Finised</h6></th>
+                      <th ><img src="images/active-status.png"></th>
+                      <th ><img src="images/active-status.png"></th>
+                      <th ><a href="#" class="edit">Edit</a> <a href="#" class="delete">Delete</a></th>
+                    </tr>
+                    <tr>
+                      <th >709</th>
+                      <th >Paid to Click (PTC): Cek website s</th>
+                      <th >2/30</th>
+                      <th >$ 0.25</th>
+                      <th ><h6><img src="images/com.png"> Finised</h6></th>
+                      <th ><img src="images/active-status.png"></th>
+                      <th ><img src="images/active-status.png"></th>
+                      <th ><a href="#" class="edit">Edit</a> <a href="#" class="delete">Delete</a></th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="pagination_page mt-2">
+                <nav aria-label="...">
+                  <ul class="pagination justify-content-center mb-0">
+                    <li class="page-item disabled">
+                      <a class="page-link red" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link red" href="# ">1</a></li>
+                    <li class="page-item active" aria-current="page">
+                      <a class="page-link red" href="#">2</a>
+                    </li>
+                    <li class="page-item"><a class="page-link red" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link red" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+      $(".hamburger").click(function(){
+        $(".side_menuu").toggleClass("display");
+      });
+    });
+     $(document).ready(function(){
+    $(window).scroll(function(){
+        if ($(window).scrollTop() > 130){
+            // $('.side_menuu').css({'position': 'fixed', "top": "0px"});
+            $('.side_menuu').addClass("fixed");
+        } else if ($(window).scrollTop() < 130){
+            // $('.side_menuu').css({'position': 'absolute', "top": "33%"});
+            $('.side_menuu').removeClass("fixed");
+        }
+    });
+});
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+   
+    <script src="https://kit.fontawesome.com/140af656c6.js" crossorigin="anonymous"></script>
+  </body>
+</html>
