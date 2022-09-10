@@ -197,7 +197,7 @@ img.hamburger_menu {
   margin-left: 10px;
 }
 .login_form input{
-  background: rgba(236, 236, 236, 0.3);
+  background: rgba(236, 236, 236, 0.5);
   border: 0px;
   color: #000;
   text-align: right;
@@ -301,7 +301,7 @@ img.hamburger_menu {
 }
 .form-check-input[type=checkbox] {
     padding-right: 17px !important;
-    padding-bottom: 4px;
+    padding-bottom: 2px;
 }
 .text-red{
   color: #EF626C;

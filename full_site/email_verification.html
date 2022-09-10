@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
     
-    <title>Register</title>
+    <title>Email Verification </title>
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,15 +52,32 @@
       <div class="container page_main">
         <div class="row">
           <div class="col-md-10 offset-md-1">
-            <div class="form_container upspace mt-5 mb-5 bg-white pt-5 pb-5">
+            <div class="form_container upspace mb-5 bg-white pt-5 pb-5">
+              <div class="heading text-center">
+                <h1 class="blu-text mt-3">Email Verification</h1>
+              </div>
               <div class="login_form">
                 <form class="row g-3">
+
+                    <div class="col-3">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-3">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-3">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-3">
+                        <input type="text" class="form-control">
+                    </div>
+                    
+                    
+                    
+                    
+
                   <div class="col-md-12 relative">
-                    <input type="text" class="form-control" placeholder="Full Name">
-                    <img src="images/user.png" class="input_img" width="20">
-                  </div>
-                  <div class="col-md-12 relative">
-                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="email" class="form-control" placeholder=" Email" >
                     <img src="images/mail.png" class="input_img" width="20">
                   </div>
                   <div class="col-md-12 relative">
@@ -68,47 +85,9 @@
                     <img src="images/pass.png" class="input_img" id="myInput" width="16">
                     <i class="fas fa-eye-slash" id="togglePassword" onclick="myFunction()"></i>
                   </div>
-                  <div class="col-md-12 relative">
-                    <input type="Password" class="form-control" placeholder="Confirm Password">
-                    <img src="images/pass.png" class="input_img" id="myInput1" width="16">
-                    <i class="fas fa-eye-slash" id="togglePassword" onclick="myFunction1()"></i>
-                  </div>
-                  <div class="col-md-12 relative">
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>Select Country</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                  <div class="col-md-12 relative">
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>Select Account Type</option>
-                      <option value="worker">Employer</option>
-                      <option value="employer">Worker</option>
-                    </select>
-                  </div>
                   <div class="col-md-12">
-                    <div class="check_boxx">
-                      <div class="form-check">
-                        <input class="form-check-input the-check-box" type="checkbox" value="">
-                        <label class="form-check-label">
-                          بالتسجيل للحصول على حساب فإنك توافق على الشروط والأحكام الخاصة بنا
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input the-check-box" type="checkbox" value="">
-                        <label class="form-check-label">
-                          أرغب في الحصول على النشرة الإخبارية
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <button type="submit" class="btn w-100 theme_green font-28 pt-2 pb-2 mt-4 mb-3">SignUp</button>
-                  </div>
-                  <div class="col-md-12">
-                    <p class="black-text font-20 text-center mt-3 mb-3">للدي حساب بالفعل؟   <a href="#" class="blu-text"> حسابي</a>  </p>
+                    <button type="submit" class="btn w-100 theme_green font-28 pt-2 pb-2">Log In</button>
+                    <p class="black-text text-center mt-4   font-20 mb-0">Don't Have an Account? <a href="#" class="blu-text"> Create an Account</a>  </p>
                   </div>
                 </form>
               </div>
@@ -117,8 +96,7 @@
         </div>
       </div>
     </main>
-    
-     
+
     <footer class="bg-white pt-5 pb-2 px-5 fotter">
       <div class="container pt-5">
         <div class="row">
@@ -194,7 +172,8 @@
           </div>
         </div>
       </div>
-  </footer>
+    </footer>
+
 
 
 
@@ -213,14 +192,6 @@
         <script>
 function myFunction() {
   var x = document.getElementById("myInput");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-}
-function myFunction1() {
-  var x = document.getElementById("myInput1");
   if (x.type === "password") {
     x.type = "text";
   } else {
