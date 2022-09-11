@@ -1,0 +1,54 @@
+/* extra extra large screen start  */
+@media screen and (max-width: 1400px) {}
+
+/* extra large screen  */
+
+@media screen and (max-width: 1200px) {}
+
+/* large screen  */
+
+@media screen and (max-width: 991px) {
+
+    /* .navbar {
+        padding-bottom: 40px;
+    } */
+    .btn-group {
+        padding-bottom: 30px;
+    }
+
+    .navbar-nav .nav-link.active {
+
+        border-bottom: unset;
+    }
+
+    .navbar-nav {
+        gap: unset;
+        padding-right: 10px;
+
+    }
+}
+
+/* medium screen  */
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding-top: 60px;
+    }
+
+    .form-heading {
+        margin-bottom: 30px;
+    }
+
+    .page_main {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+}
+
+/* small screen  */
+
+@media screen and (max-width: 576px) {
+    .form_container {
+        padding: 30px;
+    }
+}
