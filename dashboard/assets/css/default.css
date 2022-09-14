@@ -1,0 +1,161 @@
+/************** Start of root component *****************/
+:root {
+    --primary: #0099FF;
+    --secondary: #EF626C;
+    /* --primary: #6D9F71; */
+    --footer-text-color: #818181;
+    --gray: #CCCCCC;
+    --light: #ffffff;
+    --dark: #212121;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+.brand-logo {
+    width: 180px;
+    height: 50px;
+}
+
+.blue-button {
+    background: transparent;
+    border: 2px solid var(--secondary);
+    padding: 12px 35px;
+    color: var(--secondary);
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.blue-button:hover {
+    color: #FFF;
+    border: 2px solid var(--secondary);
+    padding: 12px 35px;
+    background: var(--secondary);
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.green-button {
+    background: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 12px 35px;
+    color: #FFF;
+    border-radius: 5px;
+}
+
+.green-button:hover {
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 12px 35px;
+    background: transparent;
+    border-radius: 5px;
+}
+
+.btn-1 {
+    color: #FFF;
+    border: 2px solid var(--secondary);
+    padding: 12px 35px;
+    background: var(--secondary);
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.btn-radius {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 20px;
+}
+
+.link {
+    color: var(--light);
+    white-space: nowrap;
+}
+
+/* nav start */
+.navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--primary) !important;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+    margin-left: 50px;
+    margin-right: 0px;
+}
+
+
+.navbar-nav {
+    gap: 50px;
+    padding-right: unset;
+
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        align-items: center;
+    }
+}
+
+
+.navbar-nav .nav-link {
+
+    border-bottom: 2px solid transparent;
+    transition: .3s linear;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--light);
+    border-bottom: 2px solid var(--light);
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.navbar-toggler {
+    padding: 5px;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px #888888;
+
+}
+
+.navbar-toggler-icon {
+    height: unset;
+    line-height: 0px;
+}
+
+.navbar-toggler-icon svg {
+    color: var(--light);
+}
+
+/* container  */
+
+.container-fluid {
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+
+.dash-stats:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.dash-stats .blue-text {
+    font-weight: bold;
+    text-transform: capitalize;
+}
