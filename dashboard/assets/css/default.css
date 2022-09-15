@@ -98,6 +98,7 @@ h6 {
 .navbar-nav {
     gap: 50px;
     padding-right: unset;
+    transition: .5s linear;
 
 }
 
@@ -107,17 +108,42 @@ h6 {
     }
 }
 
-
+/*-------------------------- nav-hover start ---------------------------  */
 .navbar-nav .nav-link {
-
-    border-bottom: 2px solid transparent;
-    transition: .3s linear;
+    position: relative;
+    color: #ffffff;
+    transition: .5s linear;
 }
 
 .navbar-nav .nav-link:hover {
-    color: var(--light);
-    border-bottom: 2px solid var(--light);
+    color: #ffffff !important;
 }
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 7px;
+    height: 7px;
+    border-radius: 10px;
+    background: #ffffff;
+    transition: .3s linear;
+    opacity: 0;
+}
+
+.navbar-nav .nav-link:hover:after {
+    opacity: 1 !important;
+
+}
+
+/*-------------------------- nav-hover end ---------------------------  */
+
+/* .navbar-nav .nav-link.active:after {
+    opacity: 1 !important;
+
+} */
+
 
 .navbar-nav .nav-link {
     font-size: 18px;
